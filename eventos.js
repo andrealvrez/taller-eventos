@@ -1,8 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
    
-    const boton= document.getElementById('boton');
+    const button= document.getElementById("btn");
 
-    boton.addEventListener("click", function(){
+    button.addEventListener("click", function(event){
+        event.stopPropagation();
+        alert("Hola!");
+    });
+    
+
+    const boton= document.getElementById("boton");
+
+    boton.addEventListener("click", function(event){
         alert("Hola! Soy el div");
     });
 
